@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+body {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: lightgray;
+        }
+header {position: fixed;
+    
+}
+nav {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(184, 22, 22);
+    background-color: #5FDEB4 ;
+    text-align: center;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;   
+    border-radius: 20%;
+}
+.origin, 
+.exp, 
+.hobbiesa {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(45, 136, 25);
+    text-decoration: none;
+    color: black;
+}
+main {
+    position: relative;
+}
+.section1 {
+    height: 130px;
+    position: relative;
+}
+
+.section1 p {
+    width: 75%;
+}
+.section1 img {
+    width: 125px;
+    height: 125px;   
+    border-radius: 20%;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.unafotoenmiciudad,
+.trabajando,
+.squi,
+.kayak {
+    width: 115px;
+    height: 115px;   
+    border-radius: 20%;
+}
