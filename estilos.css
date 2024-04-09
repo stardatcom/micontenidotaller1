@@ -1,67 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
 *,
 *::before,
-*::after {
+*::after{
     box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
 }
-body {
-    width: 1024px;
+body{
+    min-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-width: 2px;
-    border-style: solid;
-    border-color: black;
-    background-color: lightgray;
-        }
-header {position: fixed;
-    
+    background-color: white;
 }
-nav {
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(184, 22, 22);
-    background-color: #5FDEB4 ;
-    text-align: center;
+.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-nav img {
-    width: 50px;
-    height: 50px;   
-    border-radius: 20%;
-}
-.origin, 
-.exp, 
-.hobbiesa {
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(45, 136, 25);
-    text-decoration: none;
-    color: black;
-}
-main {
-    position: relative;
-}
-.section1 {
-    height: 130px;
-    position: relative;
+.back{
+    background-color: #006400;
+    padding: 30px 0;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.section1 p {
-    width: 75%;
-}
-.section1 img {
-    width: 125px;
-    height: 125px;   
-    border-radius: 20%;
+.menu{
     position: absolute;
     top: 0;
-    right: 50px;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
 }
 
-.unafotoenmiciudad,
-.trabajando,
-.squi,
-.kayak {
-    width: 115px;
-    height: 115px;   
+.name{
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+}
+
+.menu .barranav ul li{
+    position:  relative;
+    float: left;
+    list-style: none;
+}
+
+.menu .barranav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    display: block;
+}
+
+.menu .barranav ul li a:hover{
+    color: black;
+}
+
+#menu {
+    display: none;
+}
+
+.burguermenu{
+    font-size: 50px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+main{
+    position: relative;
+    font-family: "Caveat", cursive;
+    font-style: normal;
+}
+
+.section1{
+    padding: 0 50px;
+    background-image: url(./media/bannerbg.jpeg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-section1{
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-section1 div img{
+    width: 300px;
+    height: 300px;   
+    border-radius: 50%;
+}
+
+.contenido-section1 div h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.contenido-section1 div p{
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+
+.section2{
+    padding: 50px;
+    
+}
+
+.contenido-origen{
+    position: relative;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-origen img{
+    width: 255px;
+    height: 255px;   
     border-radius: 20%;
 }
+
+.texto-origen{
+    width: 200px;
+    height: 200px; 
+    margin-right: 100px;
+}
+
+.texto-origen h3{
+    color: #006400;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.contenido-exp{
+    position: relative;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido-exp img{
+    width: 270px;
+    height: 270px;   
+    border-radius: 20%;
+    margin: 5px 50px;
+}
+
+.texto-exp, .objetiv{
+    width: 295px;
+    height: 300px; 
+    margin-right: 5px 50px;
+}
+
+.texto-exp h3{
+    color: #006400;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+.pasatiempo{
+    position: relative;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+.titulopasat{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contenido-gym{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gym-text{
+    display: flex;
+    flex-direction: column;
+}
+
+h6 {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contenido-gym img{
+    width: 170px;
+    height: 170px;   
+    border-radius: 20%;
+    margin-top: 50px;
+}
+
+.table{
+    width: 300px; 
+    border-collapse: collapse; 
+  }
+  
+  .table th, .table td{
+    padding: 10px; 
+    border: 1px solid #ccc; 
+  }
+  
+  .table th{
+    background-color: #f2f2f2; 
+    text-align: left; 
+  }
+
+.contenido-agua{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subcontenido{
+    display: flex;
+    margin: 5px;
+}
+
+.titulo-agua h4{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contenido-agua img{
+    width: 220px;
+    height: 220px;   
+    border-radius: 20%;
+    padding: 5px;
+}
+
+.contenido-agua video{
+    width: 220px;
+    height: 220px;   
+    border-radius: 35%;
+    padding: 5px;
+}
+
+.contenido-agua div iframe{
+    padding: 5px;
+    width: 220px;
+    height: 220px;   
+    border-radius: 20%;
+}
+
+.titulopasat h3{
+    color: #006400;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.pasatiempo h4{
+    color: #006400;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.pasatiempo h5{
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+footer{
+    background-color: #006400;
+    color: #fff;
+    font-family: "Caveat", cursive;
+    padding: 20px;
+}
+
+.pie{
+    max-width: 1100px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons  img{
+    height: 50px;
+    padding: 5px;
+}
+
+.icons a{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.rights{
+    margin-top: 20px;
+}
+
+
+@media(max-width: 900px){
+    .menu {
+        width: 900px;
+
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 30px 0;
+    }
+    .menu .barranav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0; 
+        background-color: #006400;
+        display: none;
+    }
+    .menu .barranav ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .barranav{
+        display: initial;
+    }
+  }
+
